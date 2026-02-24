@@ -22,6 +22,19 @@
 |------|---------|-------------|
 | AIGC 检测率 | >50% | **11%** |
 
+### 两个版本
+
+本仓库提供两个版本的 Skill，适应不同使用场景：
+
+| 版本 | 文件 | 行数 | 特点 |
+|------|------|------|------|
+| **精简版** | `SKILL.md` | ~414 行 | ⚡ **运行效率更高**，占用更少 context window，模式说明更精炼，适合日常快速使用 |
+| **完整版** | `SKILL_full.md` | ~554 行 | 🎯 **修改效果可能更好**，每个模式保留了完整的改写示例和详细规律说明，适合需要更精准改写的场景 |
+
+**如何选择：**
+- 如果你的文本较短（≤2000字）或需要快速处理多篇文章 → 使用 **精简版** `SKILL.md`
+- 如果你的文本较长或需要尽可能高质量的改写效果 → 使用 **完整版** `SKILL_full.md`
+
 ### 核心特性
 
 - 🔍 **16 种 AI 模式识别** — 覆盖内容、语言、风格三个层面
@@ -44,6 +57,8 @@ git clone https://github.com/redbaronyyyyy-eng/humanizer-zh-academic.git \
 git clone https://github.com/redbaronyyyyy-eng/humanizer-zh-academic.git \
   .gemini/skills/humanizer-zh-academic
 ```
+
+> **提示：** 默认使用精简版 `SKILL.md`。如需使用完整版，将 `SKILL_full.md` 重命名为 `SKILL.md` 即可。
 
 ### 使用方法
 
@@ -84,6 +99,19 @@ Based on real paper rewriting experiments:
 |--------|----------|-------------------|
 | AIGC Detection Rate | >50% | **11%** |
 
+### Two Versions
+
+This repository provides two versions of the Skill for different use cases:
+
+| Version | File | Lines | Characteristics |
+|---------|------|-------|-----------------|
+| **Compact** | `SKILL.md` | ~414 | ⚡ **Higher efficiency** — uses less context window, concise pattern descriptions, ideal for quick daily use |
+| **Full** | `SKILL_full.md` | ~554 | 🎯 **Potentially better results** — complete rewriting examples and detailed rules for each pattern, ideal for precision editing |
+
+**How to choose:**
+- Short texts (≤2000 chars) or batch processing → Use **Compact** `SKILL.md`
+- Long texts or maximum quality needed → Use **Full** `SKILL_full.md`
+
 ### Key Features
 
 - 🔍 **16 AI Pattern Recognition** — Covering content, language, and style layers
@@ -107,15 +135,7 @@ git clone https://github.com/redbaronyyyyy-eng/humanizer-zh-academic.git \
   .gemini/skills/humanizer-zh-academic
 ```
 
-### Usage
-
-Trigger keywords in Claude Code:
-
-- `降低AI率` (reduce AI rate)
-- `降低AIGC` (reduce AIGC)
-- `去AI味` (remove AI flavor)
-- `humanize`
-- `学术写作润色` (academic writing polish)
+> **Tip:** The compact `SKILL.md` is used by default. To use the full version, rename `SKILL_full.md` to `SKILL.md`.
 
 ---
 
@@ -123,8 +143,8 @@ Trigger keywords in Claude Code:
 
 - [Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) (WikiProject AI Cleanup)
 - Real Chinese paper multi-version comparison experiments
-- [de-AI-writing skill](https://github.com/OUBIGFA) (OUBIGFA) — Hard constraint design reference
-- [humanizer-zh](https://github.com/op7418) (op7418) — Pattern classification reference
+- [de-AI-writing skill](https://github.com/OUBIGFA) (OUBIGFA)
+- [humanizer-zh](https://github.com/op7418) (op7418)
 
 ## License
 
